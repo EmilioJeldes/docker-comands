@@ -1,0 +1,17 @@
+# Kill all running docker containers
+docker kill $(docker ps -q)
+
+# Delete all stopped Docker containers
+docker rm $(docker ps -a -q)
+
+# Remove Docker image
+docker rmi <image name>
+
+# Delete untagged (dangling) Images
+docker rmi $(docker images -q -f dangling=true)
+
+# Delete all images
+docker rmi $(docker images -q)
+
+# Delete all dangling volumes
+docker volume rm $(docker volume ls -f dangling=true -q)
