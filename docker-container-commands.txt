@@ -1,0 +1,20 @@
+# List all running containers
+docker ps
+
+## List all crated containers
+docker ps -a
+
+## start a container (already created)
+docker start name_container(or id)
+
+## stop a container
+docker stop name_container(or id)
+
+## View all the logs of a container
+docker logs name_container
+
+## DELETE a container
+docker rm name_container(or id)
+
+## remove all containers
+docker rm -f $(docker ps -a -q)

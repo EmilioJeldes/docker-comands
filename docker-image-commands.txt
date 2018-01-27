@@ -1,0 +1,11 @@
+## List all images
+docker images
+
+## DELETE AN IMAGE
+docker rmi nombre_imagen(or id)
+
+## DELETE ALL IMAGES (unused)
+docker rmi $(docker images -q)
+
+## DELETE ALL IMAGES (force)
+docker rmi -f $(docker images -q)

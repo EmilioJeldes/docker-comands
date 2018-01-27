@@ -1,0 +1,1 @@
+5. docker run -v d:/ubicacion/local:/ubicacion/virtual nombre_imagen:tag

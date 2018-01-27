@@ -1,0 +1,2 @@
+## View all the logs of a container
+docker logs <container name>

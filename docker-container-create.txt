@@ -1,0 +1,11 @@
+1. docker run nombre_imagen:tag
+
+2. docker run --name nombre-container nombre_image:tag
+
+3. docker run -p [puerto_local]:[puerto_virtual] nombre_imagen:tag
+
+4. docker run -d nombre_imagen:tag
+
+5. docker run -v d:/ubicacion/local:/ubicacion/virtual nombre_imagen:tag
+
+

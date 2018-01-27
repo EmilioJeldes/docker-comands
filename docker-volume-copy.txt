@@ -1,0 +1,6 @@
+Usage:  docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|-
+        docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH [flags]
+#################
+docker cp c0eb36e70c3b:/data/db d:/data2
+
+docker cp [nombre_container]:/lugar/storage/data c:/local
