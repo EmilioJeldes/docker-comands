@@ -1,0 +1,4 @@
+docker exec -it <container_name> bash
+
+# exec to add multiple commands
+# -it i interactive t pseudo-terminal
