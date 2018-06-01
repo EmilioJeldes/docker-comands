@@ -1,5 +1,5 @@
 docker run -d -p 9090:8080 -p 1521:1521 --name oracle -v D:/DockerData/OracleData/data:/u01/app/oracle sath89/oracle-xe-11g
-docker run -d -p 9090:8080 -p 1521:1521 --name oracle -v ~/Documentos/DockerData/OracleData/data:/u01/app/oracle sath89/oracle-xe-11g
+docker run -d -p 9090:8080 -p 1521:1521 --name oracle -v ~/DockerData/Oracle/data:/u01/app/oracle sath89/oracle-xe-11g
 
 # -p 9090:8080 console access 9090
 # -p 1521:1521 database port

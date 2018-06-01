@@ -1,5 +1,6 @@
-docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=emilio" --name mssql -p 1433:1433 -d microsoft/mssql-server-linux:latest
+#Without data
+docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Contraseña123' -p 1433:1433 --name slqserver -d microsoft/mssql-server-linux:2017-latest
 
-docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=pass' -p 1433:1433 -d microsoft/mssql-server-linux:latest
+# With Data
+docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Contraseña123' -p 1433:1433 --name slqserver -d microsoft/mssql-server-linux:2017-latest
 
-docker run -d -p 1433:1433 --name mssql -e sa_password=emilio> -e ACCEPT_EULA=Y microsoft/mssql-server-windows-express
