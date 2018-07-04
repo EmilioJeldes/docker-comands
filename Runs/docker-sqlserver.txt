@@ -1,6 +1,7 @@
 #Without data
-docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Contraseña123' -p 1433:1433 --name slqserver -d microsoft/mssql-server-linux:2017-latest
+docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Contraseña123' -p 1433:1433 --name sqlserver -d microsoft/mssql-server-linux:2017-latest
 
 # With Data
-docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Contraseña123' -p 1433:1433 --name slqserver -d microsoft/mssql-server-linux:2017-latest
+docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Contraseña123' -p 1433:1433 -v ~/DockerData/SQLServer/data:/Documents --name sqlserver -d
+microsoft/mssql-server-linux:2017-latest
 

@@ -1,4 +1,9 @@
+# Windows
 docker run -p 3306:3306 --name mysql-recipe -v D:/DockerData/MySqlData/mysql-recipe:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=password -d mysql
+
+# Mac
+docker run -p 3306:3306 --name mysql-recipe -v ~/DockerData/MySql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=password -d mysql
+
 
 # -p 3306:3306 port mapped
 # -v storage synch (works on mysql windows)
