@@ -1,1 +1,5 @@
+# Windows
 docker run -p 27017:27017 --name mongodb -v /Users/emilio/DockerData/MySqlData/monbodb:/data/db -d mongo
+
+# Mac
+docker run -p 27017:27017 --name mongo -v ~/DockerData/MongoDB/data:/data/db -d mongo
