@@ -1,0 +1,2 @@
+# Mac
+docker run -p 80:80 -v /Users/emilio/Servers/apache2:/var/www/html -d --name=php -d php:7.2-apache
