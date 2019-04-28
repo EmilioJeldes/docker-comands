@@ -1,0 +1,2 @@
+# Remove all containers and images
+docker system prune
