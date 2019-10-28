@@ -1,0 +1,1 @@
+docker run --name psql-mindset -p 5432:5432 -v ~/DockerData/psql/mindset:/var/lib/postgresql/data -d postgres:9.6-alpine
